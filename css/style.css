@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: linear-gradient(to top right, #ffffff86, #8d54e975);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-width: 21rem;
+}
+
+.div {
+  flex-shrink: 0;
+  background-image: linear-gradient(to bottom left, #e2d7ff, #ffffff, #ffffff);
+  text-align: center;
+  border-radius: 20px;
+  width: 21rem;
+  min-width: 21rem;
+  height: 460px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.344);
+}
+
+h2 {
+  color: #353c67;
+}
+
+.text2 {
+  color: #b6b6b6;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+input {
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px rgb(208, 208, 208) solid;
+  width: 85%;
+  height: 40px;
+}
+
+input::placeholder {
+  color: #9a9a9a;
+}
+
+.fieldset-container {
+  margin-top: -30px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  position: relative;
+}
+
+.email {
+  position: absolute;
+  top: 1px;
+  left: 15%;
+  font-size: 12px;
+  color: #777;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.password {
+  position: absolute;
+  top: 72px;
+  left: 15%;
+  font-size: 12px;
+  color: #777;
+  background-color: white;
+  padding: 0 5px;
+}
+
+.passwordinput {
+  margin-top: 30px;
+}
+/* en enskild class för den ena input då jag har svårt med att placera dem samman i en grupp. om jag gjorde om denna sida idag hade koden varit mindre och bättre strukturerad, se min "kontakt" sida i uppgift 2. */
+
+fieldset input:focus {
+  outline: none;
+  border-color: #878ae9;
+}
+
+fieldset input:focus + legend.email {
+  color: #878ae9;
+}
+/* fieldset tog mig ett tag att googla för att få "legend" placerad över på input border. sedan att få legend samt input border att få focus färg vid rätt input focus. osäker om just "fieldset" elementet är nödvändigt men det var det jag fick fram som lösning då. */
+
+fieldset input:focus + legend.password {
+  color: #878ae9;
+}
+
+.button1 {
+  padding: 0;
+  margin-top: 25px;
+  text-align: center;
+  background-image: linear-gradient(to top right, #6a6eee, #878ae9);
+  color: white;
+}
+
+.regknapp {
+  color: #858585;
+  background-color: #ffffff;
+  border: 0px;
+  cursor: pointer;
+}
+/* "Registrera dig" kunde varit ett <a> element men enligt uppgifts instruktionerna ska det vara en knapp. */
+
+.regknapp:hover {
+  color: #878ae9;
+}
+
+.button1:hover {
+  background-image: linear-gradient(to top right, #878ae9, #6a6eee);
+  cursor: pointer;
+}
+
+.remember-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-left: 1.5rem;
+  gap: 4px;
+}
+
+#remember {
+  margin-top: 0px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+.remember-container label:hover {
+  cursor: pointer;
+  user-select: none;
+}
+
+.rememberlabel {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+
+.glömt {
+  margin-top: 0;
+  margin-left: 3.8rem;
+  font-size: 12px;
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
+.loggainmed {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bababa;
+}
+
+.dots {
+  color: rgb(221, 221, 221);
+  font-size: 12px;
+}
+
+.socialscontainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialscontainer button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 10px;
+  width: 60px;
+  box-shadow: 0px 2px 4px rgb(206, 206, 206);
+  cursor: pointer;
+}
+
+.socialscontainer button:hover {
+  background-image: linear-gradient(to top, #e7e7e7, #ffffff, #ffffff);
+}
+
+.googleicon {
+  width: 18px;
+  height: auto;
+}
+
+.facebookicon {
+  width: 18px;
+  height: auto;
+}
+
+.appleicon {
+  width: 18px;
+  height: auto;
+}
+
+.emailicon {
+  position: absolute;
+  opacity: 30%;
+  margin-left: -40px;
+  margin-top: 8px;
+  width: 24px;
+  height: auto;
+}
+
+.passwordicon {
+  position: absolute;
+  opacity: 30%;
+  margin-left: -42px;
+  margin-top: 36px;
+  width: 26px;
+  height: auto;
+}

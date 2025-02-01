@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uppgift 1</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="div">
+        <h2>Logga in</h2>
+        <p class="text2">Välkommen! Logga in eller registrera dig nedan</p>
+        <form action="signin">
+          <fieldset class="fieldset-container">
+            <input name="email" type="email" placeholder="example@hotmail.se" />
+            <legend class="email">E-mail</legend>
+            <img class="emailicon" src="images/mail.png" alt="email icon">
+          </br>
+            <input
+              class="passwordinput"
+              type="password"
+              placeholder="Ditt lösenord"
+            />
+            <legend class="password">Lösenord</legend>
+            <img class="passwordicon" src="images/padlock.png" alt="key icon">
+          </br>
+          <div class="remember-container">
+            <input id="remember" type="checkbox" value="Remember me" />
+            <label class="rememberlabel" for="remember">Kom ihåg mig</label>
+            <a class="glömt" href="" target="_blank">Glömt lösenord</a>
+          </div>
+          <div class="button-container">
+            <input class="button1" type="submit" value="Submit" />
+            <button class="regknapp">Registrera dig</button>
+          </div>
+          <div class="loggainmed">
+            <!-- &bull; &nbsp; för utskriva mellanslag och punkter emellan, går att göra snyggare i css men Anas visade det i en lektion efter jag hade fått fram denna lösning.  -->
+            <p><span class="dots">&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;</span>Logga in med<span class="dots"> &bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;&bull; &nbsp;</span></p>
+          </div>
+          <div class="socialscontainer">
+            <button class="googlebutton">
+              <img src="images/google.png" alt="google icon" class="googleicon">
+            </button>
+            <button class="facebookbutton">
+              <img src="images/facebook.png" alt="google icon" class="facebookicon">
+            </button>
+            <button class="applebutton">
+              <img src="images/apple.png" alt="apple icon" class="appleicon">
+            </button>
+          </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
