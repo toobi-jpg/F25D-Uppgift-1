@@ -226,3 +226,10 @@ input[type="checkbox"] {
   width: 26px;
   height: auto;
 }
+
+#message-output {
+  position: absolute;
+  left: 100px;
+  bottom: 142px;
+  font-size: 16px;
+}
